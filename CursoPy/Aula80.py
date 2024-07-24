@@ -8,5 +8,5 @@ while x < 5:
 
 print(lista_nome)
 
-indice = int(input('Escolha um indice qualquer da lista:'))
+indice = int(input('Escolha um indice qualquer da lista: '))
 print(lista_nome[indice])
