@@ -7,6 +7,7 @@ caractere_digitado_valido = len(caractere_digitado) < 1
 letra_correta = caractere_digitado in palavra_secreta
 acerto = ''
 
+# Informe a palavra que o outro jogador deve descobrir
 palavra_secreta = input('Informe a palavra secreta: ')
 tentativas = len(palavra_secreta)
 
