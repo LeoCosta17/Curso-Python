@@ -1,11 +1,18 @@
 # Programa que válida o CPF, de acordo com cálculo feito pelo Governo Federal
 
-# 1 - Usuário insere o CPF
-cpf = input('Informe o CPF: ')
+while True:
+    # 1 - Usuário insere o CPF
+    cpf = input('Informe o CPF: ')
 
-# 2 - CPF será limpo, removido os '.' (pontos) e '-' (traços)
-cpf_sem_ponto = cpf.replace('.', '')
-cpf_limpo = cpf_sem_ponto.replace('-', '')
+    # 2 - CPF será limpo, removido os '.' (pontos) e '-' (traços)
+    cpf_sem_ponto = cpf.replace('.', '')
+    cpf_limpo = cpf_sem_ponto.replace('-', '')
+
+    try:
+        int_cpf = int(cpf_limpo)
+        break
+    except ValueError as error:
+        print(f'informe apenas numeros. Erro: {error}')
 
 # 3 - Separo os 9 primeiros digitos do CPF
 # e são ordenadamente multiplicados pela sequência 10, 9, 8, 7, 6, 5, 4, 3, 2
