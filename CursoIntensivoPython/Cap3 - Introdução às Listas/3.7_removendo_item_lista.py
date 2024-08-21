@@ -19,3 +19,8 @@ while condition:
 
 for index, name in enumerate(guest_list):
     print(f'Convidado: {index} - {name}')
+
+del guest_list [0]
+del guest_list [0]
+
+print(guest_list)

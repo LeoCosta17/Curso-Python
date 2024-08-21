@@ -5,3 +5,7 @@ pessoa = {
 }
 
 print(pessoa, type(pessoa))
+print(pessoa['nome'])
+
+for chave in pessoa:
+    print(chave, pessoa[chave])
